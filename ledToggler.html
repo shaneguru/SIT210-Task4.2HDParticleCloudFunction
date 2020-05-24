@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Led Toggler</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Led Toggler</h1>
+  <p>Select button to on/off LED</p>
+</div>
+
+<div class="container" style="margin-left: 40%">
+  <div class="row">
+    <div class="col-sm-4">
+      <form action="https://api.particle.io/v1/devices/e00fce689df1489931a96c1e/toggl?access_token=8056899d33a7b2311b5349780fe18607dedac55c" method="POST">
+				<br>
+				<br>
+				<input id='submit' type='submit' name = 'Red'   class="btn btn-danger btn-lg btn-block"  value = 'On Red'>
+		  		<input id='submit' type='submit' name = 'Red'   class="btn btn-danger btn-lg btn-block"  value = 'Off Red'>
+		  		<input id='submit' type='submit' name = 'Blue'   class="btn btn-primary btn-lg btn-block"  value = 'On Blue'>
+		  		<input id='submit' type='submit' name = 'Blue'   class="btn btn-primary btn-lg btn-block"  value = 'Off Blue'>
+		  		<input id='submit' type='submit' name = 'Yellow'   class="btn btn-warning btn-lg btn-block"  value = 'On Yellow'>
+		  		<input id='submit' type='submit' name = 'Yellow'   class="btn btn-warning btn-lg btn-block"  value = 'Off Yellow'>
+				<br>
+			</form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
